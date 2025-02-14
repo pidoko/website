@@ -12,7 +12,7 @@ export default function Home() {
     <>
       {/* SEO: Set page title and meta description */}
       <Head>
-        <title>My Portfolio</title>
+        <title>Peter Chibuikem Idoko</title>
         <meta
           name="description"
           content="Showcasing my professional experience and projects."
