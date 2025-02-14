@@ -5,4 +5,5 @@ export default defineConfig({
     include: ["**/*.{jsx,tsx,css}"],
     exclude: ["node_modules", ".git", ".next"],
   },
+  darkMode: 'class'
 });
