@@ -11,7 +11,7 @@ export default function Contact() {
     <>
       {/* SEO: Define page title and meta description */}
       <Head>
-        <title>Contact Me | My Portfolio</title>
+        <title>Contact Me | Peter Chibuikem Idoko</title>
         <meta
           name="description"
           content="Get in touch via email, LinkedIn, or GitHub to discuss projects, collaborations, or opportunities."

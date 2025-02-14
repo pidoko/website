@@ -8,10 +8,10 @@ import Head from "next/head";
  */
 export default function About() {
   return (
-    <>
+    <>  
       {/* SEO: Define page title and meta description */}
       <Head>
-        <title>About Me | My Portfolio</title>
+        <title>About Me | Peter Chibuikem Idoko</title>
         <meta
           name="description"
           content="Learn more about my professional experience, skills, and background as a software developer."
@@ -33,6 +33,18 @@ export default function About() {
         <p className="mt-4">
           When I'm not coding, you can find me exploring new technologies, playing basketball, or brainstorming innovative ideas to improve my community. I invite you to explore my projects and get in touch if you'd like to collaborate.
         </p>
+
+        {/* Resume Download Button */}
+        <div className="mt-8">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          >
+            Download Resume Here
+          </a>
+        </div>
       </main>
     </>
   );
