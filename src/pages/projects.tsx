@@ -68,6 +68,6 @@ export async function getStaticProps() {
 
   return {
     props: { repos },
-    revalidate: 60, // Revalidate at most every 60 seconds (optional)
+    revalidate: 60, // Revalidate at most every 60 seconds
   };
 }
