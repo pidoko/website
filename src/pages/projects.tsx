@@ -23,7 +23,7 @@ export default function Projects({ repos }: ProjectsProps) {
     <>
       {/* SEO: Define page title and meta description */}
       <Head>
-        <title>My Projects | My Portfolio</title>
+        <title>My Projects | Peter Chibuikem Idoko</title>
         <meta
           name="description"
           content="A showcase of my GitHub projects excluding some repositories."
