@@ -22,7 +22,7 @@ export default function Home() {
       {/* Main content area styled using Windi CSS */}
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
         <h1 className="text-4xl font-bold">
-          Welcome to My Portfolio
+          Peter Chibuikem Idoko
         </h1>
         <video
           className="mt-8 max-w-full"
