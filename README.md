@@ -14,7 +14,7 @@ Ensure you have the following installed:
 - npm 11.1.0 or later
 
 ## Setup & Installation
-Clone the Repository, Change directory, Install Dependencies, Start the Development Server,
+Clone the Repository, Change directory, Install Dependencies, and Start the Development Server:
 ```
 git clone https://github.com/pidoko/your-repo-name.git
 cd your-repo-name
@@ -24,9 +24,7 @@ Your website will be available at [http://localhost:3000](http://localhost:3000)
 ```
 
 ## Production
-To build and run the application in production mode:
-
-Build the Project, Start the Production Server:
+Build the Project, and Start the Production Server:
 ```
 npm run build
 npm start
