@@ -22,7 +22,16 @@ export default function About() {
       <main className="container mx-auto p-6">
         <h1 className="text-3xl font-bold">About Me</h1>
         <p className="mt-4">
-          I am a software developer with experience in Next.js, React, and backend systems.
+          Hello, I'm Peter Chibuikem Idoko, a passionate software developer and web designer dedicated to crafting clean, efficient, and user-friendly digital experiences.
+        </p>
+        <p className="mt-4">
+          I work with modern web technologies like Next.js and utilize utility-first styling with Windi CSS, ensuring that every project is visually appealing, fast, scalable, and SEO-friendly.
+        </p>
+        <p className="mt-4">
+          I believe in the power of well-refactored code and thoughtful design to solve real-world challenges. Whether building dynamic applications or refining existing codebases, I focus on clarity, performance, and maintainability.
+        </p>
+        <p className="mt-4">
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or brainstorming innovative ideas to enhance the web. I invite you to explore my projects and get in touch if you'd like to collaborate.
         </p>
       </main>
     </>
