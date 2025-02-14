@@ -27,7 +27,7 @@ export default function Contact() {
             href="mailto:pidoko1@gmail.com"
             className="text-blue-500 hover:underline"
           >
-            pidoko@hotmail.com
+            pidoko1@gmail.com
           </a>
         </p>
         <p className="mt-4">
