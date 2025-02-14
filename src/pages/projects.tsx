@@ -26,7 +26,7 @@ export default function Projects({ repos }: ProjectsProps) {
         <title>My Projects | My Portfolio</title>
         <meta
           name="description"
-          content="A showcase of my GitHub projects excluding the CS5330 repository."
+          content="A showcase of my GitHub projects excluding some repositories."
         />
       </Head>
 
