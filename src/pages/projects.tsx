@@ -47,6 +47,17 @@ export default function Projects({ repos }: ProjectsProps) {
               {repo.description && <span>: {repo.description}</span>}
             </li>
           ))}
+          <li className="mt-2">
+            <a
+              href="https://huggingface.co/spaces/pidoko/mosaicGenerator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Mosaic Generator
+            </a>
+            <span>: The mosaic project hosted on Hugging Face Spaces.</span>
+          </li>
         </ul>
       </main>
     </>
