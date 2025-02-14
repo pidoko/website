@@ -54,9 +54,9 @@ export default function Projects({ repos }: ProjectsProps) {
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
-              Mosaic Generator
+              mosaicGenerator App
             </a>
-            <span>: The mosaic project hosted on Hugging Face Spaces.</span>
+            <span>: Test the mosaic generator for yourself.</span>
           </li>
         </ul>
       </main>
