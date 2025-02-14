@@ -22,7 +22,7 @@ export default function About() {
       <main className="container mx-auto p-6">
         <h1 className="text-3xl font-bold">About Me</h1>
         <p className="mt-4">
-          Hello, I'm Peter Chibuikem Idoko, a passionate computer scientist and adventure-seeker dedicated to crafting solutions and exploring my community.
+          Hello, I'm Peter Chibuikem Idoko, a passionate computer scientist dedicated to crafting solutions to help my community.
         </p>
         <p className="mt-4">
           For this website, I worked with Next.js and implemented utility-first styling with Windi CSS, ensuring that the website is visually appealing, fast, scalable, and SEO-friendly.
