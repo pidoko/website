@@ -26,7 +26,7 @@ export default function Home() {
         </h1>
         <video
           className="mt-8 max-w-full"
-          src="/videos/vid1.mp4" //
+          src="/videos/vid2.mp4" //
           poster="/images/img1.jpg" // A placeholder image before the video loads
           autoPlay
           loop
