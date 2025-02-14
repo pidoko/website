@@ -1,6 +1,6 @@
 # Peter Chibuikem Idoko's Website
 
-Welcome to Peter Chibuikem Idoko's personal portfolio website. This site is built with **Next.js** and **Windi CSS**, showcasing code refactoring, readability, and simplicity in a modern, responsive design.
+Welcome to [Peter Chibuikem Idoko's personal portfolio website](https://pidoko.vercel.app/). This site is built with **Next.js** and **Windi CSS**, showcasing code refactoring, readability, and simplicity in a modern, responsive design.
 
 ## Features
 - Next.js Framework: Fast, scalable, and SEO-friendly with server-side rendering and static site generation.
