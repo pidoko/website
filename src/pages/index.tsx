@@ -21,9 +21,12 @@ export default function Home() {
 
       {/* Main content area styled using Windi CSS */}
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl justify-center font-bold">
           Peter Chibuikem Idoko
         </h1>
+        <h2 className="text-xl justify-center text-gray-700 dark:text-gray-300 mt-2">
+          Computer scientist and technology consultant
+        </h2>
         <video
           className="mt-8 max-w-full"
           src="/videos/vid2.mp4" //
