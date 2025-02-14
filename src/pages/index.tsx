@@ -24,7 +24,18 @@ export default function Home() {
         <h1 className="text-4xl font-bold">
           Welcome to My Portfolio
         </h1>
-        {/* Additional content can be added here */}
+        <video
+          className="mt-8 max-w-full"
+          src="/videos/vid1.mp4" //
+          poster="/images/img1.jpg" // A placeholder image before the video loads
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto" // Adjust based on performance testing
+        >
+          Your browser does not support the video tag.
+        </video>
       </main>
     </>
   );
