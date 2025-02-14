@@ -31,7 +31,7 @@ export default function About() {
           I believe in the power of well-refactored code and thoughtful design to solve real-world challenges. Whether building dynamic applications or refining existing codebases, I focus on clarity, performance, and maintainability.
         </p>
         <p className="mt-4">
-          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or brainstorming innovative ideas to enhance the web. I invite you to explore my projects and get in touch if you'd like to collaborate.
+          When I'm not coding, you can find me exploring new technologies, playing basketball, or brainstorming innovative ideas to improve my community. I invite you to explore my projects and get in touch if you'd like to collaborate.
         </p>
       </main>
     </>
