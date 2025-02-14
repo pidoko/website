@@ -1,6 +1,7 @@
 import "windi.css"; // Import WindiCSS instead of globals.css
 import type { AppProps } from "next/app";
 import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next" // Enable Vercel insights
 
 /**
  * Custom App Component for Next.js
