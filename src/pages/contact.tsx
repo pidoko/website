@@ -24,7 +24,7 @@ export default function Contact() {
         <p className="mt-4">
           Email me at:{" "}
           <a
-            href="mailto:pidoko@hotmail.com"
+            href="mailto:pidoko1@gmail.com"
             className="text-blue-500 hover:underline"
           >
             pidoko@hotmail.com
