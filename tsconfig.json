@@ -18,6 +18,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",             // Set baseUrl to the project root
+    "paths": {
+      "@/*": ["src/*"]          // Map any import starting with "@/..." to "src/..."
+    },
     "plugins": [
       {
         "name": "next"
