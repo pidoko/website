@@ -13,7 +13,7 @@ async function createStructure() {
   const baseDir = path.join(__dirname, 'my-portfolio');
 
   // List of folders to be created within the project directory.
-  // This includes folders for public assets, components, pages (including API routes), styles, utilities, and hooks.
+  // This includes folders for public assets, components, pages (including API routes), styles, libraries, and hooks.
   const folders = [
     'public',
     'src/components',
