@@ -25,7 +25,7 @@ export default function Home() {
           Peter Chibuikem Idoko
         </h1>
         <h2 className="text-xl text-center text-gray-700 dark:text-gray-300 mt-2">
-          Computing Professional and Adventure Seeker
+          Computing Professional
         </h2>
         <video
           className="mt-8 max-w-full"
