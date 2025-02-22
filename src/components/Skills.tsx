@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const skills = {
   ProgrammingLanguages: ["Python", "JavaScript", "TypeScript", "PowerShell", "C++"],
-  frameworksAndLibraries: ["Next.js", "React", "Windi CSS", "OpenCV", "Gradio"],
-  cloudPlatforms: ["Google Cloud Platform (GCP)", "AWS", "Vercel", "Hugging Face Spaces"],
-  machineLearning: [
+  FrameworksAndLibraries: ["Next.js", "React", "Windi CSS", "OpenCV", "Gradio"],
+  CloudPlatforms: ["Google Cloud Platform (GCP)", "AWS", "Vercel", "Hugging Face Spaces"],
+  MachineLearning: [
     "Gray Level Co-occurrence Matrix (GLCM)",
     "Local Binary Patterns (LBP)",
     "Support Vector Machines (SVM)",
@@ -14,7 +14,7 @@ const skills = {
     "Feature Extraction",
     "Image Classification"
   ],
-  cybersecurity: [
+  Cybersecurity: [
     "NIST Framework",
     "Nessus Security Auditing",
     "Duo MFA",
@@ -23,12 +23,12 @@ const skills = {
     "Risk Assessment & Compliance",
     "Training"
   ],
-  ITInfrastructure: ["Active Directory", "Group Policy", "Networking (DNS, DHCP, VPNs)", "System Administration (Windows, Linux, macOS)"],
-  automationAndData: ["Airtable Automation", "AI-Powered Workflow Optimization", "Data Engineering", "Web Scraping"],
-  projectManagement: ["Agile (Scrum, Kanban)", "CAPM Certification", "Technical Documentation", "Enterprise IT Rollouts"],
-  webDevelopment: ["Responsive Design", "Server-Side Rendering (SSR)", "Static Site Generation (SSG)"],
-  toolsAndTechnologies: ["OpenAI API", "MS Project", "SharePoint", "Tableau"],
-  deploymentAndHosting: ["Vercel Deployment", "Hugging Face Spaces Deployment"]
+  Infrastructure: ["Active Directory", "Group Policy", "Networking (DNS, DHCP, VPNs)", "System Administration (Windows, Linux, macOS)"],
+  AutomationAndData: ["Airtable Automation", "AI-Powered Workflow Optimization", "Data Engineering", "Web Scraping"],
+  ProjectManagement: ["Agile (Scrum, Kanban)", "CAPM Certification", "Technical Documentation", "Enterprise IT Rollouts"],
+  WebDevelopment: ["Responsive Design", "Server-Side Rendering (SSR)", "Static Site Generation (SSG)"],
+  ToolsAndTechnologies: ["APIs", "Git", "MS Project", "SharePoint", "Tableau"],
+  DeploymentAndHosting: ["Vercel Deployment", "Hugging Face Spaces Deployment"]
 };
 
 export default function Skills() {

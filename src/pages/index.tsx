@@ -48,13 +48,12 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         />
-        {/* Career Timeline */}
-        <Timeline />
-
-        {/* Skills Section */}
-        <Skills />
-
       </motion.section>
+      {/* Career Timeline */}
+      <Timeline />
+
+      {/* Skills Section */}
+      <Skills />
     </>
   );
 }
