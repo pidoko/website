@@ -39,8 +39,12 @@ export default function Home({ repos }: HomeProps) {
       >
         <h1 className="text-4xl text-center font-bold">Peter Chibuikem Idoko</h1>
         <h2 className="text-xl text-center text-gray-700 dark:text-gray-300 mt-2">
-          Computing Professional
+          Software Developer | IT Consultant | Mechanical Engineering Technologist
         </h2>
+        <p className="text-center mt-4">
+          Javascript, HTML, CSS, React, Java, Node.js, Python, MongoDB, SQL, Linux, Git, GitHub, Microsoft Azure, PyTorch, TensorFlow, APIs.
+        </p>
+        {/* Video Background */}
         <motion.video
           className="mt-8 max-w-full"
           src="/videos/vid2.mp4"
