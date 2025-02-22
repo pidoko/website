@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const skills = {
+  ComputationalThinking: ["Decomposition", "Pattern Recognition", "Abstraction", "Algorithmic Thinking", "Debugging", "Big-O Analysis"],
   ProgrammingLanguages: ["Python", "JavaScript", "TypeScript", "PowerShell", "C++"],
   FrameworksAndLibraries: ["Next.js", "React", "Windi CSS", "OpenCV", "Gradio"],
   CloudPlatforms: ["Google Cloud Platform (GCP)", "AWS", "Vercel", "Hugging Face Spaces"],
@@ -34,7 +35,7 @@ const skills = {
 export default function Skills() {
   return (
     <div className="py-12">
-      <h2 className="text-center text-3xl font-bold mb-8">Tech Stack</h2>
+      <h2 className="text-center text-3xl font-bold mb-8">Skills</h2>
       <div className="space-y-8">
         {Object.entries(skills).map(([category, skillsArray]) => (
           <div key={category}>
