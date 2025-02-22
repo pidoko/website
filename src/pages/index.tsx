@@ -13,7 +13,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
  */
 export default function Home() {
   const { scrollYProgress } = useScroll(); // Track scroll position
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.1]); // Scale effect
+  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.2]); // Scale effect
 
   return (
     <>
