@@ -114,6 +114,41 @@ export default function Home({ repos }: HomeProps) {
         </ul>
       </section>
 
+      {/* Education Section */}
+      <section className="container mx-auto p-6">
+        <h2 className="text-3xl font-bold">Education</h2>
+        <div className="flex flex-col md:flex-row items-center mt-4">
+          <div className="w-full md:w-1/2">
+            <img
+              src="/images/northeastern.jpg"
+              alt="Northeastern University Logo"
+              className="rounded shadow-lg"
+            />
+          </div>
+          <div className="w-full md:w-1/2 md:pl-6 mt-4 md:mt-0">
+            <p className="text-lg">
+              Master of Science in Computer Science
+              2023 - 2026
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row items-center mt-4">
+          <div className="w-full md:w-1/2">
+            <img
+              src="/images/nait.png"
+              alt="NAIT Logo"
+              className="rounded shadow-lg"
+            />
+          </div>
+          <div className="w-full md:w-1/2 md:pl-6 mt-4 md:mt-0">
+            <p className="text-lg">
+              Bachelor of Technology in Technology Management
+              2016 - 2021
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="container mx-auto p-6">
         <h2 className="text-3xl font-bold">Contact Me</h2>
