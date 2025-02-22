@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
  */
 export default function About() {
   const timelineEvents = [
-    { year: "2016", title: "Academic Foundation", desc: "Started Bachelor of Technology in Technology Management at NAIT." },
+    { year: "2016", title: "Academic Foundation", desc: "Started combined Bachelor of Technology in Technology Management and Diploma in Mechanical Engineering Technology at NAIT." },
     { year: "2019", title: "Information Technology", desc: "Started as an Information Systems Technician at First Nation of Nacho Nyak Dun." },
     { year: "2021", title: "Managerial Transition", desc: "Promoted to Information Systems Manager, leading IT strategy and cybersecurity initiatives." },
     { year: "2023", title: "Computing Professional", desc: "Started Master of Science in Computer Science at Northeastern University, focusing on artificial intelligence and cybersecurity." },
