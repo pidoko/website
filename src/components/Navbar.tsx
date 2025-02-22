@@ -30,14 +30,6 @@ export default function Navbar() {
             About
           </Link>
         </li>
-        <li>
-          <Link
-            href="/contact"
-            className="hover:text-blue-500 transition-colors"
-          >
-            Contact
-          </Link>
-        </li>
       </ul>
     </nav>
   );
