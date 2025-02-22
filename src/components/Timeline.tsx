@@ -8,7 +8,7 @@ const timelineEvents = [
     { "year": "2023", "title": "Computing Professional", "desc": "Started Master of Science in Computer Science at Northeastern University, focusing on IT infrastructure and automation." },
     { "year": "2024", "title": "Project Leadership", "desc": "Worked as Project Coordinator at Northeastern University, designing automated registration and event management systems." },
     { "year": "2024", "title": "Enterprise IT Management", "desc": "Started as IT Coordinator at VACFSS, enhancing security, asset management, and service operations." },
-    { "year": "2025", "title": "IT Leadership & Strategy", "desc": "Pursuing IT leadership roles to drive enterprise security, IT strategy, and digital transformation initiatives." }
+    { "year": "2025", "title": "Tech Leadership & Strategy", "desc": "Pursuing Tech leadership roles to drive enterprise security, IT strategy, and digital transformation initiatives." }
 ];
 
 export default function Timeline() {
