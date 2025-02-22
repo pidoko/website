@@ -42,7 +42,7 @@ export default function Skills() {
             <h3 className="text-xl font-semibold text-center mb-4">{category.replace(/([A-Z])/g, " $1")}</h3>
             
             {/* Skills Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
               {skillsArray.map((skill, index) => (
                 <motion.div
                   key={index}
