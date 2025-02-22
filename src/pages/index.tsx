@@ -10,6 +10,8 @@ import { motion } from "framer-motion";
  * This component represents the landing page of your portfolio.
  * It uses Next.js's Head component for SEO and meta information,
  * and Windi CSS utility classes for styling.
+ *
+ * It includes sections for career timeline, interactive skills preview, and resume download.
  */
 export default function Home() {
 
@@ -50,6 +52,18 @@ export default function Home() {
 
         {/* Skills Section */}
         <Skills />
+
+        {/* Resume Download Button */}
+        <div className="text-center mt-12">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          >
+            Download Resume Here
+          </a>
+        </div>
       </section>
     </>
   );
