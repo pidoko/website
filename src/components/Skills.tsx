@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const skills = {
-  ProgrammingLanguages: ["Python", "JavaScript", "TypeScript", "PowerShell", "C++\n"],
+  ProgrammingLanguages: ["Python", "JavaScript", "TypeScript", "PowerShell", "C++"],
   frameworksAndLibraries: ["Next.js", "React", "Windi CSS", "OpenCV", "Gradio"],
   cloudPlatforms: ["Google Cloud Platform (GCP)", "AWS", "Vercel", "Hugging Face Spaces"],
   machineLearning: [
