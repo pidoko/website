@@ -37,4 +37,4 @@ Contributions are welcome! Please fork the repository and create a pull request 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For any inquiries, please contact me at pidoko@hotmail.com.
+For any inquiries, contact me at pidoko1@gmail.com.
