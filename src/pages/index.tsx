@@ -2,7 +2,7 @@ import Head from "next/head";
 import Timeline from "@/components/Timeline";
 import Skills from "@/components/Skills";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 /**
  * Home Page Component
@@ -12,8 +12,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
  * and Windi CSS utility classes for styling.
  */
 export default function Home() {
-  const { scrollYProgress } = useScroll(); // Track scroll position
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 1.2]); // Scale effect
 
   return (
     <>
