@@ -113,6 +113,42 @@ export default function Home({ repos }: HomeProps) {
           
         </ul>
       </section>
+
+      {/* Contact Section */}
+      <section className="container mx-auto p-6">
+        <h2 className="text-3xl font-bold">Contact Me</h2>
+        <p className="mt-4">
+          Email me at:{" "}
+          <a
+            href="mailto:pidoko1@gmail.com"
+            className="text-blue-500 hover:underline"
+          >
+            pidoko1@gmail.com
+          </a>
+        </p>
+        <p className="mt-4">
+          Connect with me on LinkedIn:{" "}
+          <a
+            href="https://linkedin.com/in/pidoko"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            linkedin.com/in/pidoko
+          </a>
+        </p>
+        <p className="mt-4">
+          Check out my GitHub:{" "}
+          <a
+            href="https://github.com/pidoko"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            github.com/pidoko
+          </a>
+        </p>
+      </section>
     </>
   );
 }
