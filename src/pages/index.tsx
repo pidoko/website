@@ -24,10 +24,9 @@ export default function Home() {
         />
       </Head>
 
-      {/* Hero Section with Parallax */}
-      <motion.section
+      {/* Hero Section without Parallax */}
+      <section
         className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white"
-        style={{ scale }}
       >
         <h1 className="text-4xl text-center font-bold">Peter Chibuikem Idoko</h1>
         <h2 className="text-xl text-center text-gray-700 dark:text-gray-300 mt-2">
@@ -51,7 +50,7 @@ export default function Home() {
 
         {/* Skills Section */}
         <Skills />
-      </motion.section>
+      </section>
     </>
   );
 }
