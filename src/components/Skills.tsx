@@ -46,7 +46,7 @@ export default function Skills() {
               {skillsArray.map((skill, index) => (
                 <motion.div
                   key={index}
-                  className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center text-lg"
+                  className="p-1 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center text-lg"
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                 >
