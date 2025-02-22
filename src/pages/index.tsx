@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Timeline from "@/components/Timeline";
-import Skills from "@/components/Skills";
 
 import { motion } from "framer-motion";
 
@@ -47,11 +45,6 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         />
-        {/* Career Timeline */}
-        <Timeline />
-
-        {/* Skills Section */}
-        <Skills />
 
         {/* Resume Download Button */}
         <div className="text-center mt-12">
