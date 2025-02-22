@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Timeline from "@/components/Timeline";
+import Skills from "@/components/Skills";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 
 /**
@@ -45,6 +48,12 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         />
+        {/* Career Timeline */}
+        <Timeline />
+
+        {/* Skills Section */}
+        <Skills />
+
       </motion.section>
     </>
   );
