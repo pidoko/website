@@ -95,7 +95,7 @@ export default function Home({ repos }: HomeProps) {
             >
               Texture Classification App
             </a>
-            <span>: Explore texture classification in action.</span>
+            <span>: Explore texture classification in action for wood, brick or stone.</span>
           </li>
           {repos.map((repo) => (
             <li key={repo.id} className="mt-2">
