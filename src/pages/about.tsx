@@ -1,49 +1,50 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 /**
  * About Page Component
  *
- * This page provides information about the developer, including skills and experience.
+ * This page showcases my career timeline, highlighting key milestones
  * It uses Next.js's Head component for SEO and meta details, while Windi CSS utility classes style the layout.
  */
 export default function About() {
+  const timelineEvents = [
+    { year: "2016", title: "Academic Foundation", desc: "Started Bachelor of Technology in Technology Management at NAIT." },
+    { year: "2019", title: "Information Technology", desc: "Started as an Information Systems Technician at First Nation of Nacho Nyak Dun." },
+    { year: "2021", title: "Managerial Transition", desc: "Promoted to Information Systems Manager, leading IT strategy and cybersecurity initiatives." },
+    { year: "2023", title: "Computing Professional", desc: "Started Master of Science in Computer Science at Northeastern University, focusing on artificial intelligence and cybersecurity." },
+    { year: "2024", title: "Project Leadership", desc: "Worked as Project Coordinator at Northeastern University, designing automated registration and event management systems." },
+    { year: "2024", title: "Enterprise IT Management", desc: "Started as IT Coordinator at VACFSS, enhancing security, asset management, and service operations." },
+    { year: "2025", title: "Tech Leadership & Strategy", desc: "Pursuing Tech leadership roles to drive enterprise security, IT strategy, and digital transformation initiatives." }
+  ];
+
   return (
-    <>  
-      {/* SEO: Define page title and meta description */}
+    <>
       <Head>
         <title>About Me | Peter Chibuikem Idoko</title>
-        <meta
-          name="description"
-          content="Learn more about my professional experience, skills, and background as a software developer."
-        />
+        <meta name="description" content="Explore my career journey and key milestones in my professional experience." />
       </Head>
 
-      {/* Main content area styled with Windi CSS */}
       <main className="container mx-auto p-6">
-        <h1 className="text-3xl font-bold">About Me</h1>
-        <p className="mt-4">
-          Hello, I'm Peter Chibuikem Idoko, a passionate computer scientist dedicated to crafting solutions to help my community.
-        </p>
-        <p className="mt-4">
-          For this website, I worked with Next.js and implemented utility-first styling with Windi CSS, ensuring that the website is visually appealing, fast, scalable, and SEO-friendly.
-        </p>
-        <p className="mt-4">
-          I believe in the power of well-refactored code and thoughtful design to solve real-world challenges. Whether building dynamic applications or refining existing codebases, I focus on clarity, performance, and maintainability.
-        </p>
-        <p className="mt-4">
-          When I'm not coding, you can find me exploring new technologies, playing basketball, or brainstorming innovative ideas to improve my community. I invite you to explore my projects and get in touch if you'd like to collaborate.
-        </p>
-
-        {/* Resume Download Button */}
-        <div className="mt-8">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          >
-            Download Resume Here
-          </a>
+        <h1 className="text-3xl font-bold text-center mb-8">My Career Timeline</h1>
+        <div className="space-y-12">
+          {timelineEvents.map((event, index) => (
+            <motion.div
+              key={index}
+              className="flex items-center space-x-6"
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="w-16 h-16 bg-blue-500 text-white flex items-center justify-center text-lg font-bold rounded-full">
+                {event.year}
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">{event.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{event.desc}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </main>
     </>
