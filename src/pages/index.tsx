@@ -1,18 +1,27 @@
 import Head from "next/head";
-
 import { motion } from "framer-motion";
+import type { GetStaticProps } from "next";
+
+type Repo = {
+  id: number;
+  name: string;
+  description: string | null;
+  html_url: string;
+};
+
+type HomeProps = {
+  repos: Repo[];
+};
 
 /**
  * Home Page Component
  *
- * This component represents the landing page of your portfolio.
- * It uses Next.js's Head component for SEO and meta information,
- * and Windi CSS utility classes for styling.
- *
- * It includes sections for career timeline, interactive skills preview, and resume download.
+ * This component represents the landing page of your portfolio. It includes a hero section
+ * featuring your professional details and a projects section that lists your GitHub repositories
+ * (excluding the "CS5330" repository) along with links to your mosaicGenerator and textureClassification apps on Hugging Face.
+ * Styling is handled via Windi CSS and animations are provided by Framer Motion.
  */
-export default function Home() {
-
+export default function Home({ repos }: HomeProps) {
   return (
     <>
       {/* SEO: Set page title and meta description */}
@@ -24,7 +33,7 @@ export default function Home() {
         />
       </Head>
 
-      {/* Hero Section without Parallax */}
+      {/* Hero Section */}
       <section
         className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white"
       >
@@ -45,7 +54,6 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         />
-
         {/* Resume Download Button */}
         <div className="text-center mt-12">
           <a
@@ -58,6 +66,68 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Projects Section */}
+      <section className="container mx-auto p-6">
+        <h1 className="text-3xl font-bold">My Projects</h1>
+        <ul className="mt-4">
+        <li className="mt-2">
+            <a
+              href="https://huggingface.co/spaces/pidoko/mosaicGenerator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              mosaicGenerator App
+            </a>
+            <span>: Test the mosaic generator for yourself.</span>
+          </li>
+          <li className="mt-2">
+            <a
+              href="https://huggingface.co/spaces/pidoko/textureClassification"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Texture Classification App
+            </a>
+            <span>: Explore texture classification in action.</span>
+          </li>
+          {repos.map((repo) => (
+            <li key={repo.id} className="mt-2">
+              <a
+                href={repo.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                {repo.name}
+              </a>
+              {repo.description && <span>: {repo.description}</span>}
+            </li>
+          ))}
+          
+        </ul>
+      </section>
     </>
   );
 }
+
+/**
+ * getStaticProps fetches the GitHub repositories for the user "pidoko"
+ * and filters out the repository named "CS5330". The result is passed to
+ * the page component as props.
+ */
+export const getStaticProps: GetStaticProps = async () => {
+  // Fetch repositories from GitHub API
+  const res = await fetch("https://api.github.com/users/pidoko/repos");
+  const data: Repo[] = await res.json();
+
+  // Filter out the repository with the name "CS5330"
+  const repos = data.filter((repo) => repo.name !== "CS5330");
+
+  return {
+    props: { repos },
+    revalidate: 60, // Revalidate at most every 60 seconds
+  };
+};
