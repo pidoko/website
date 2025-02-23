@@ -42,7 +42,7 @@ export default function Home({ repos }: HomeProps) {
           Software Developer | IT Consultant | Mechanical Engineering Technologist
         </h2>
         <p className="text-center mt-4">
-          Javascript, HTML, CSS, React, Java, Node.js, Python, MongoDB, SQL, Linux, Git, GitHub, Microsoft Azure, PyTorch, TensorFlow, APIs.
+          Javascript, HTML, CSS, React, Java, Node.js, Python, MongoDB, SQL, Linux, Git, GitHub, Microsoft Azure, PyTorch, FastAI, APIs.
         </p>
         {/* Video Background */}
         <motion.video
